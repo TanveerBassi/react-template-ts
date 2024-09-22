@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 interface Expense {
   date: string;
@@ -11,7 +11,7 @@ interface Expense {
 
 interface AppProps {}
 
-function App({}: AppProps) {
+const App = ({}: AppProps) => {
   const [expenses, setExpenses] = useState<Expense[]>([]);
   const [error, setError] = useState<string | null>(null);
 
